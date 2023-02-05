@@ -14,4 +14,5 @@
 ![img](https://github.com/jh1sc/Md2Docx-PS/blob/main/rm%2B/Styles.png)
 
 - Here is were to find it!
+- All you need to do now is open the dropdox, and experiment!
 
