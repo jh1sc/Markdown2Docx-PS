@@ -27,10 +27,6 @@ Function FISD {
 }
 
 $MarkDown = FISD -Title "Choose a .md file" -Filter @("Markdown Files (*.md)|*.md")
-$mdC = Get-Content -Path $MarkDown
-$StartIndex = $mdC.IndexOf("## ASSISTANT") + 1
-$TrimmedContent = $mdC[$StartIndex..$mdC.Length]
-Set-Content -Path $MarkDown -Value $TrimmedContent
 $Directory = FOSD -Description "Select a directory to create the new docx in"
 $Directory = $Directory+"\MarkDown.docx"
 pandoc -s $MarkDown -o $Directory --reference-doc .\ref.docx
