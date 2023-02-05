@@ -29,7 +29,7 @@ Function FISD {
 $MarkDown = FISD -Title "Choose a .md file" -Filter @("Markdown Files (*.md)|*.md")
 $Directory = FOSD -Description "Select a directory to create the new docx in"
 $Directory = $Directory+"\MarkDown.docx"
-pandoc -s $MarkDown -o $Directory --reference-doc .\ref.docx
+.\pandoc -s $MarkDown -o $Directory --reference-doc .\ref.docx
 Start-Process $Directory 
 
 
