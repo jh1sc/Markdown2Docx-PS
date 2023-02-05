@@ -1,4 +1,5 @@
-# Md2Docx-PS, A PowerShell Script for Converting Markdowns to Docx
+# Md2Docx-PS
+- A PowerShell Script for Converting Markdowns to Docx
 
 
 # Description 🎯
